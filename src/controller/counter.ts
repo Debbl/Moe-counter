@@ -9,7 +9,7 @@ interface ThemeListType {
 }
 
 class CounterController {
-  themePath = path.resolve(__dirname, "./theme");
+  themePath = path.resolve(__dirname, "../theme");
   themeList: ThemeListType = {};
 
   private convertToDatauri(path: string) {
