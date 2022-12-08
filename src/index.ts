@@ -1,5 +1,7 @@
-function add(n1: number, n2: number) {
-  return n1 + n2;
-}
+import app from "./app";
 
-export default add;
+const port = 3000;
+
+app.listen(port, () => {
+  console.log(`http://127.0.0.1:${port}`);
+});
