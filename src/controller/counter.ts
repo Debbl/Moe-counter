@@ -47,6 +47,7 @@ class CounterController {
   }
 
   async getCountImage(name: string, theme: string, length = 7) {
+    return __dirname;
     const count = await this.getCountByName(name);
     await this.genThemeList();
 
