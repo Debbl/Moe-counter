@@ -1,8 +1,8 @@
-import { Router } from "express";
+import type { Application } from "express";
+import counterRouter from "./counter";
 
-const router = Router();
-router.get("/", (req, res) => {
-  res.send("ok");
-});
+const router = function (app: Application) {
+  app.use("/counter", counterRouter);
+};
 
 export default router;
