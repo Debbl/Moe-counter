@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
-    "build": "rimraf dist lambda && tsc && netlify-lambda build dist && cp -r src/assets/* lambda",
+    "build": "rimraf dist lambda && tsc && netlify-lambda build dist",
     "lint": "eslint --fix . --ignore-path .gitignore"
   },
   "dependencies": {
