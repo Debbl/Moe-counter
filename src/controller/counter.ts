@@ -9,7 +9,7 @@ interface ThemeListType {
 }
 
 class CounterController {
-  themePath = path.resolve(__dirname, "../theme");
+  themePath = path.resolve(__dirname, "../assets/theme");
   themeList: ThemeListType = {};
 
   private convertToDatauri(path: string) {
@@ -47,7 +47,6 @@ class CounterController {
   }
 
   async getCountImage(name: string, theme: string, length = 7) {
-    return __dirname;
     const count = await this.getCountByName(name);
     await this.genThemeList();
 
