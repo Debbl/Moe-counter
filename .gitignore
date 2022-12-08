@@ -13,6 +13,7 @@
 # production
 /build
 /dist
+/lambda
 
 # misc
 .DS_Store

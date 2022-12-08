@@ -9,7 +9,7 @@ interface ThemeListType {
 }
 
 class CounterController {
-  themePath = path.resolve(__dirname, "../assets/theme");
+  themePath = path.resolve(__dirname, "./theme");
   themeList: ThemeListType = {};
 
   private convertToDatauri(path: string) {
@@ -31,6 +31,10 @@ class CounterController {
       const imgList = fs.readdirSync(path.resolve(this.themePath, theme));
       imgList.forEach((img) => {
         const imgPath = path.resolve(this.themePath, theme, img);
+        // import("../assets/theme/asoul/0.gif").then((res) => {
+        //   console.log(res);
+        // });
+
         const name = path.parse(img).name;
         const { width, height } = sizeOf(imgPath);
         themeList[theme][name] = {
