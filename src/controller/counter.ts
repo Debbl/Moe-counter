@@ -1,5 +1,5 @@
-import fs from "node:fs";
-import path from "node:path";
+import fs from "fs";
+import path from "path";
 import sizeOf from "image-size";
 import mimeType from "mime-types";
 import counterService from "../services/counter";

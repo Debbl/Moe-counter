@@ -1,0 +1,8 @@
+[build]
+  command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
+  functions = "lambda" #  netlify-lambda reads this
+
+[[redirects]]
+  from = "/*"
+  to =  "/.netlify/functions/main/*"
+  status = 200
