@@ -1,5 +1,4 @@
 [build]
-  publish = "src/assets/"
   command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
   functions = "lambda" #  netlify-lambda reads this
 
