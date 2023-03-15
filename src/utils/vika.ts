@@ -1,6 +1,6 @@
 import { Vika } from "@vikadata/vika";
 
-const VIKA_TOKEN = process.env.VIKA_TOKEN;
+const VIKA_TOKEN = process.env.VIKA_TOKEN || "";
 
 class VikaUtils {
   vika: Vika;
