@@ -1,9 +1,11 @@
 import { Vika } from "@vikadata/vika";
 
+const VIKA_TOKEN = process.env.VIKA_TOKEN;
+
 class VikaUtils {
   vika: Vika;
   constructor() {
-    this.vika = new Vika({ token: "usk0R9kWavBMYfqp5Oyalzx" });
+    this.vika = new Vika({ token: VIKA_TOKEN });
   }
 
   getVikaConn() {
